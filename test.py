@@ -5,3 +5,6 @@ while(1):
     print(babas);
 
 test = True;
+
+while test:
+    print("lol");
