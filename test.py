@@ -3,3 +3,5 @@ babas = "gay";
 
 while(1):
     print(babas);
+
+test = True;
