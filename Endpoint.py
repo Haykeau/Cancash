@@ -8,12 +8,12 @@ class Endpoint():
         self.tpsDataCenter = tpsDataCenter
 
 
-    def chooseCache(tpsCache):
+    def chooseCache(self,tpsCache):
         mini = min(tpsCache)
         cacheChoisi = tpsCache.index(mini)
         return cacheChoisi
 
-    def tpsGagne(tpsCache,tpsDataCenter):
-        cacheChoisi = chooseCache(tpsCache)
+    def tpsGagne(self,tpsCache,tpsDataCenter):
+        cacheChoisi = self.chooseCache(tpsCache)
         temps = tpsDataCenter - tpsCache[cacheChoisi]
         return temps

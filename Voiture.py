@@ -5,8 +5,8 @@ tpsDataCenter = 1000
 
 endpoint = Endpoint(nbRequete,tpsCache,tpsDataCenter)
 
-cacheChoisi = endpoint.chooseCache()
-temps = endpoint.tpsGagne()
+cacheChoisi = endpoint.chooseCache(tpsCache)
+temps = endpoint.tpsGagne(tpsCache,tpsDataCenter)
 
 print(cacheChoisi)
 print(temps)
