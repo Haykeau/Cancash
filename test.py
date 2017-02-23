@@ -18,4 +18,7 @@ print('a')
 #hi
 >>>>>>> 4a63ecfd6b7d4cdb860c54cd1faf5a7a4258baf5
 def calculerTonAge():
-    
+    ageInf1 = random.random()
+    print("Age inf = " + ageInf1)
+    (int)age = ageInf1*100
+    print()
