@@ -6,16 +6,28 @@ class CacheServer:
         self.classementVideo = []
         self.videoAGarder = []
         self.tailleRestante = taille
+        self.nombreVideo = 0
 
 
     def classement():
         for i in self.endPoints:
             for j in i.nbRequete:
-                self.classementVideo = i.nbRequete * i.tpsGagne
-        self.classementVideo.sort()
-        self.classementVideo[::-1]
+                self.classementVideo.append(i.nbRequete * i.tpsGagne)
 
     def decision():
-        for i in classementVideo:
-            if gb.video[].taille < self.tailleRestante:
-                self.videoAGarder.append()
+        cp = self.classementVideo
+        computing = True
+        while(computing):
+            indexTop = cp.index(max(cp))
+
+            if video[indexTop].taille < self.tailleRestante:
+                self.videoAGarder.append(indexTop)
+                self.nombreVideo += 1
+            cp[indexTop] = 0
+
+            computing = False
+            for i in video:
+                if i.taille < self.tailleRestante:
+                    computing = True
+
+cache = CacheServer(1,100,[])
