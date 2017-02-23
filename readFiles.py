@@ -11,18 +11,23 @@ def cutLine(nbLine):
         cutedLine.append(array[char]) #Append each size in the getInfo parameter
     return cutedLine
 
-def createList(nbLine):
-    endList = []
-    pingList = []
-    theseLines = cutLine(nbLine)
-    nbItterations = theseLines[1]
-    itsPing = theseLines[0]
-    for i in range(0,int(theseLines[1])):
-        numberLine = nbLine+i
-        itte = cutLine(numberLine)
-        endList[i] = itte[0]
-        pingList[i] = itte[1]
-    return endList,pingList
+def createList(nbItt, loop):
+    if(loop):
+        endList = []
+        pingList = []
+        theseLines = cutLine(nbItt)
+        returnItt = int(theseLines[1])+int(nbItt)
+        nbItt = int(theseLines[1])
+        itsPing = theseLines[0]
+    itt = 0
+    print "need stop " + str(nbItt)
+    while itt < nbItt:
+        print "il y a " + str(itt)
+        itte = cutLine(itt)
+        endList.append(int(itte[0]))
+        pingList.append(int(itte[1]))
+        itt +=1
+    return endList,pingList, returnItt
 
 with open("me_at_the_zoo.in","r") as hashTest :
     content = hashTest.readlines()
@@ -36,8 +41,15 @@ numberRequestDescription = getInfo[2]
 numberCache = getInfo[3]
 sizeCache = getInfo[4]
 
-
 video = Video(getInfo[0],content[1]) #Video(number of video, size of each video)
-a,b = createList(2)
-print a
-print b
+
+endList,pingList,nextIt = createList(2,True)
+
+for i in range(0,8):
+    print endList
+    print pingList
+    endTemp, pingTemp, nextIt = createList(nextIt, False)
+    endList.append(endTemp)
+    pingList.append(pingTemp)
+
+print endlist
