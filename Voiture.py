@@ -1,13 +1,12 @@
-class Voiture:
+from Endpoint import*
+nbRequete = [1500,10000,300]
+tpsCache = [230,111,340,245]
+tpsDataCenter = 1000
 
-    def __init__(self):
-        self.nom = "Modus"
-        self.roues = 4
-    def _get_roues(self):
-        print("Nombre de roues : ")
-        return self.roues
-    def _set_roues(self, r):
-        self.roues = r
-        print("Chg de roues")
+endpoint = Endpoint(nbRequete,tpsCache,tpsDataCenter)
 
-    roues=property(_get_roues, _set_roues)
+cacheChoisi = endpoint.chooseCache(tpsCache)
+temps = endpoint.tpsGagne(tpsCache,tpsDataCenter)
+
+print(cacheChoisi)
+print(temps)
