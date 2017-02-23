@@ -11,3 +11,4 @@ class submission:
             for i in CacheServer.nombreVideo:
                 fichier.write("CacheServer.videoAGarder[i] ")
             fichier.write("/n")
+        fichier.close()
