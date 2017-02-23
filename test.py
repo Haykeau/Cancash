@@ -1,5 +1,5 @@
 import random
-
+from Voiture import*
 def calculerTonAge():
     ageInf1 = random.random()
     age = int(ageInf1*100)
@@ -8,7 +8,8 @@ def calculerTonAge():
 
 compteur = 0
 
-while(True):
+
+"""while(True):
     age = calculerTonAge()
     compteur+=1
     if age == 99:
@@ -21,4 +22,8 @@ while(True):
         print("Tu as " + age + " ans")
 
 while(True) :
-    calculerTonAge()
+    calculerTonAge()"""
+
+ma1erVoiture = Voiture()
+ma1erVoiture._set_roues(5)
+ma1erVoiture._get_roues()
