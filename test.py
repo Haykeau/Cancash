@@ -1,13 +1,7 @@
 import random
-print('this is a test')
-babas = "gay"
-
-
-
 
 def calculerTonAge():
     ageInf1 = random.random()
-
     age = int(ageInf1*100)
     print("Tu as"+str(age)+"ans")
     return age
@@ -21,3 +15,10 @@ while(True):
         print("T'es vieux gros")
         print(str(compteur)+"essai(s)")
         break
+
+    age = int(ageInf1*100)
+    if(age == 100):
+        print("Tu as " + age + " ans")
+
+while(True) :
+    calculerTonAge()
