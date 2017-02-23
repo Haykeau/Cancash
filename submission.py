@@ -5,7 +5,9 @@ class submission:
         self.videosContenu = videosContenu
 
         fichier = open("submission.txt", "w")
-
-        for i in get
+        fichier.write(numberCache)
+        fichier.write("/n")
+        for i in numberCache:
             for i in CacheServer.nombreVideo:
                 fichier.write("CacheServer.videoAGarder[i] ")
+            fichier.write("/n")
