@@ -7,4 +7,6 @@ while(1):
 test = True;
 
 while test:
-    print("lol");
+    print("lol")
+
+#hi
