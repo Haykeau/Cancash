@@ -1,6 +1,4 @@
 # Cancash
 Google Hashcode #TeamCancash
 
-On va tout péter bande de shlags
-
-Test update
+Bienvenue dans notre dépot GIT qui va tout niquer
