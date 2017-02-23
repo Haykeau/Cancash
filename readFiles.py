@@ -1,5 +1,4 @@
-import Endpoint
-import video
+from video import Video
 import random
 
 with open("me_at_the_zoo.in","r") as hashTest :
@@ -8,11 +7,6 @@ content = [x.strip() for x in content]
 
 getInfo = []
 endpointList = []
-size = []
-
-for i in range(0,100) :
-    size.append(int(random.random()*10))
-
 
 array = content[0].split(" ")
 for char in range(0,len(array)):
@@ -24,8 +18,5 @@ numberRequestDescription = getInfo[2]
 numberCache = getInfo[3]
 sizeCache = getInfo[4]
 
-video = Video(numberVideo,size)
-
-
-
-print getInfo
+video = Video(getInfo[0],content[1])
+print video.getInformation()
