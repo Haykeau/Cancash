@@ -1,0 +1,36 @@
+[33mcommit 06605b994d0658043f4c6306c21ee44b27777f4d[m
+Merge: 312bf52 a6c86af
+Author: Extro96 <extro96@gmail.com>
+Date:   Wed Feb 22 11:37:32 2017 +0100
+
+    Merge branch 'master' of https://github.com/Haykeau/Cancash
+
+[33mcommit a6c86af7df36b28153306a4de260d87640dc0e5b[m
+Author: Haykeau <heko.chat@gmail.com>
+Date:   Wed Feb 22 11:24:52 2017 +0100
+
+    commit Test00
+
+[33mcommit 312bf52f47a327f033fa8012c6d40e5424095cfd[m
+Author: Extro96 <extro96@gmail.com>
+Date:   Wed Feb 22 10:29:49 2017 +0100
+
+    les choses arrivent
+
+[33mcommit f8f01e1a62fa8f126b76aece7d35e7c243b7fd69[m
+Author: Extro <extro96@gmail.com>
+Date:   Wed Feb 22 10:10:39 2017 +0100
+
+    git log --oneline -5 --author Extro --before "Wed Feb 22 2017"
+
+[33mcommit 39c9851aaf1809663ce8eaaa163e386d352aeace[m
+Author: Haykeau <heko.chat@gmail.com>
+Date:   Wed Feb 22 09:46:37 2017 +0100
+
+    Update README.md
+
+[33mcommit eb497b4819abe15deb02c3bebe6a902c8d2e1051[m
+Author: Haykeau <heko.chat@gmail.com>
+Date:   Wed Feb 22 09:43:17 2017 +0100
+
+    Create README.md
