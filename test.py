@@ -2,10 +2,9 @@ import random
 
 def calculerTonAge():
     ageInf1 = random.random()
-    print("Tu as :")
     age = int(ageInf1*100)
-    print(age)
-    print("ans")
+    if(age == 100):
+        print("Tu as " + age + " ans")
 
 while(True) :
     calculerTonAge()
