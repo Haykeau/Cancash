@@ -1,5 +1,5 @@
 class Endpoint():
-    //docstring for Endpoint.
+    
 
 
     def __init__(self, nbRequete,tpsCache, tpsDataCenter):
@@ -17,4 +17,3 @@ class Endpoint():
         cacheChoisi = chooseCache(tpsCache)
         moyenne = 0
         for video in nbRequete:
-            
