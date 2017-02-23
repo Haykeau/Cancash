@@ -1,10 +1,12 @@
 print('this is a test')
-babas = "gay";
+babas = "gay"
 
 while(1):
-    print(babas);
+    print(babas)
 
 test = True;
 
 while test:
-    print("lol");
+    print("lol")
+print('a')
+bjmlvhslvhlskhvskl
