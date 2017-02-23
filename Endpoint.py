@@ -6,6 +6,7 @@ class Endpoint():
         self.nbRequete = nbRequete
         self.tpsCache = tpsCache
         self.tpsDataCenter = tpsDataCenter
+        self.tpsGagne = self.tempsGagne(tpsCache,tpsDataCenter)
 
 
     def chooseCache(self,tpsCache):
@@ -13,7 +14,7 @@ class Endpoint():
         cacheChoisi = tpsCache.index(mini)
         return cacheChoisi
 
-    def tpsGagne(self,tpsCache,tpsDataCenter):
+    def tempsGagne(self,tpsCache,tpsDataCenter):
         cacheChoisi = self.chooseCache(tpsCache)
         temps = tpsDataCenter - tpsCache[cacheChoisi]
         return temps
