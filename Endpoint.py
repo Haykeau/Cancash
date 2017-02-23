@@ -7,7 +7,7 @@ class Endpoint():
         self.tpsCache = tpsCache
         self.tpsDataCenter = tpsDataCenter
         self.tpsGagne = self.tempsGagne(tpsCache,tpsDataCenter)
-
+        self.cacheChoisi = self.chooseCache(tpsCache)
 
     def chooseCache(self,tpsCache):
         mini = min(tpsCache)
