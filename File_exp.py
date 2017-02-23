@@ -11,5 +11,3 @@ def ecrireFichier(tableau):
 
 def lireFichier():
 	fichier = open('fichier_import.txt', 'r')
-
-ecrireFichier([[5,6,568,89565],[584,4848,165]])
